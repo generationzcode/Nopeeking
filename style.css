@@ -1,0 +1,23 @@
+canvas{
+  border: 2px solid black;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  height:80%;
+  float: right;
+}
+input{
+  border:1px solid grey ;
+  padding:10px;
+  margin:2px;
+  border-radius:5px;
+}
+button{
+  border: none;
+  border-radius:5px;
+  padding:10px;
+  margin:2px;
+  background-color:#02d158;
+}

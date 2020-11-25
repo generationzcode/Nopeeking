@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>repl.it</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+		<script src="script.js"></script>
+    <div class="inputs">
+    <input id="pq" type="number" placeholder="pixel quality" >
+    <input id="waveq" type="number" placeholder="wave quality" >
+    <input id="lx" type="number" placeholder="light x coordinate" >
+    <input id="ly" type="number" placeholder="light y coordinate" >
+    <input id="lz" type="number" placeholder="light z coordinate" >
+    <input id="px" type="number" placeholder="plane x coordinate" >
+    <input id="py" type="number" placeholder="plane y coordinate" >
+    <input id="pz" type="number" placeholder="plane z coordinate" >
+    <input id="size" type="number" placeholder="size of plane" >
+   <button id="butt" onclick="onclickedbutt()">submit!</button>
+   </div>
+   <script>
+     var pixel = document.getElementById("pq");
+     var wavequal = document.getElementById("waveq");
+          var lightx = document.getElementById("lx");
+          var lighty = document.getElementById("ly");
+          var lightz = document.getElementById("lz");
+          var px = document.getElementById("px");
+          var py = document.getElementById("py");
+          var pz = document.getElementById("pz");
+          var size = document.getElementById("size");
+      function onclickedbutt(){
+        playIt(pixel.value,wavequal.value,lightx.value,lighty.value,lightz.value,px.value,py.value,pz.value,size.value)
+      }
+   </script>
+	</body>
+</html>
